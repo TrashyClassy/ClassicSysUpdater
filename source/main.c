@@ -74,7 +74,7 @@ int main() {
 				svcSleepThread(3000000000);
 				printf("    \x1b[32mInstalled\x1b[0m\n");
 				svcSleepThread(5000000000);
-				printf("000400DB00016102.cia");
+				printf("000400DB00016002.cia");
 				svcSleepThread(3000000000);
 				printf("    \x1b[32mInstalled\x1b[0m\n");
 				svcSleepThread(6000000000);
