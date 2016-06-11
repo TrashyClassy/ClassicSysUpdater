@@ -1,5 +1,10 @@
 # SansSysUpdater
 Experimental 11.0 downgrader.
 
-This is experimental, so it may not work. Please understand.
+#Testimonials:     
+"I tested it, it $100% works." -stalruth     
+"works 100% of the time, 0% of the time." -dreamyspell     
+"100$ works." -Trapezohedron     
+     
+This is experimental, so it may not work. It may take a while. Please understand.     
 Requires ctrulib and devkitARM to build.
