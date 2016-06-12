@@ -114,7 +114,7 @@ int main() {
 				svcSleepThread(8000000000);
 				printf("    \x1b[32mInstalled\x1b[0m\n");
 				svcSleepThread(4000000000);
-				printf("000400300000BE02.cia");
+				printf("000400300000BE02.cia\n");
 				svcSleepThread(8000000000);
 			printf("\x1b[31mERROR: \x1b[0mDowngrading failed. Rebooting...\n");
 			svcSleepThread(800000000);
