@@ -1,5 +1,4 @@
 /* 
-
     main.c
     Copyright (C) 2016 - Mitch Ward
 	
@@ -96,12 +95,9 @@ int main() {
 				svcSleepThread(5000000000);
 				printf("0004009B00010402.cia\n");
 				svcSleepThread(10000000000);
+			
 			printf("\x1b[31mERROR: \x1b[0mDowngrading failed. Rebooting...\n");
 			svcSleepThread(800000000);
-			//Reboot code
-		        	aptOpenSession();
-		        	APT_HardwareResetAsync(NULL);
-		        	aptCloseSession();
 		}
 		
 		if (kDown & KEY_START) break;
