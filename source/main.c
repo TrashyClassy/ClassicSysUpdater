@@ -102,7 +102,7 @@ int main() {
 				svcSleepThread(5000000000);
 				printf("0004009B00010402.cia");
 				svcSleepThread(1000000000);
-			    printf("    \x1b[32mInstalled\x1b[0m\n")
+			    printf("    \x1b[32mInstalled\x1b[0m\n");
 				svcSleepThread(3000000000);
 				printf("0004801000022900.cia");
 				svcSleepThread(4000000000);
