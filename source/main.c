@@ -1,5 +1,4 @@
 /* 
-
     main.c
     Copyright (C) 2016 - Mitch Ward
 	
@@ -7,6 +6,8 @@
     of the MIT license.  See the LICENSE file for details.
     
 */
+
+
 
 #include <3ds.h>
 #include <stdio.h>
@@ -19,6 +20,10 @@ int main() {
 	gfxInitDefault();
 	aptInit();
 	fsInit();
+	
+	consoleInit(GFX_BOTTOM, NULL);
+	printf("SansSysUpdater - v0.4 UNSTABLE BUILD!\n");
+    printf("\x1b[31mIMPORTANT: THIS IS AN UNSTABLE BUILD, MEANING THAT THIS HAS THE POTENTIAL TO BRICK YOUR DEVICE! BE AWARE.\x1b[0m");
 	
 	consoleInit(GFX_TOP, NULL);
 	
@@ -42,10 +47,13 @@ int main() {
 		if (kDown & KEY_A) {
 			printf("Getting system information...\n");
 			svcSleepThread(5000000000);
-			
 			printf("Downgrading...\n");
 			FSUSER_InitializeCtrFileSystem();
 			svcSleepThread(5000000000);
+				printf("NATIVE_FIRM         ");
+				svcSleepThread(1000000000);
+				printf("    \x1b[32mInstalled\x1b[0m\n");
+				svcSleepThread(2000000000);
 				printf("000400DB00017102.cia");
 				svcSleepThread(3000000000);
 				printf("    \x1b[32mInstalled\x1b[0m\n");
@@ -94,9 +102,20 @@ int main() {
 				svcSleepThread(70000000);
 				printf("    \x1b[32mInstalled\x1b[0m\n");
 				svcSleepThread(5000000000);
-				printf("0004009B00010402.cia\n");
-				svcSleepThread(10000000000);
-			
+				printf("0004009B00010402.cia");
+				svcSleepThread(1000000000);
+			    printf("    \x1b[32mInstalled\x1b[0m\n");
+				svcSleepThread(3000000000);
+				printf("0004801000022900.cia");
+				svcSleepThread(4000000000);
+				printf("    \x1b[32mInstalled\x1b[0m\n");
+				svcSleepThread(6000000000);
+				printf("0004001B00018002.cia");
+				svcSleepThread(8000000000);
+				printf("    \x1b[32mInstalled\x1b[0m\n");
+				svcSleepThread(4000000000);
+				printf("000400300000BE02.cia\n");
+				svcSleepThread(8000000000);
 			printf("\x1b[31mERROR: \x1b[0mDowngrading failed. Rebooting...\n");
 			svcSleepThread(800000000);
 		}
