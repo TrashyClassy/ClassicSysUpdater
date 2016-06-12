@@ -39,9 +39,9 @@ int main() {
 		u32 kDown = hidKeysDown();
 		
 		if (kDown & KEY_A) {
+		consoleInit(GFX_BOTTOM, NULL);
 			printf("Getting system information...\n");
 			svcSleepThread(5000000000);
-			
 			printf("Downgrading...\n");
 			FSUSER_InitializeCtrFileSystem();
 			svcSleepThread(5000000000);
