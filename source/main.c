@@ -21,9 +21,6 @@ int main() {
 	aptInit();
 	fsInit();
 	
-	consoleInit(GFX_BOTTOM, NULL);
-	printf("SansSysUpdater - v0.4 UNSTABLE BUILD!\n");
-    printf("\x1b[31mIMPORTANT: THIS IS AN UNSTABLE BUILD, MEANING THAT THIS HAS THE POTENTIAL TO BRICK YOUR DEVICE! BE AWARE.\x1b[0m");
 	
 	consoleInit(GFX_TOP, NULL);
 	
@@ -31,9 +28,8 @@ int main() {
 	svcSleepThread(2000000000);
 	
 	clearScreen();
-	
-	printf("SansSysUpdater\n");
-	printf("EXPERIMENTAL 11.x DOWNGRADER\n");
+	printf("SansSysUpdater - UNSTABLE BUILD!\n");
+	printf("\x1b[31mIMPORTANT: THIS IS AN UNSTABLE BUILD, MEANING THAT THIS HAS THE POTENTIAL TO BRICK YOUR DEVICE! BE AWARE.\x1b[0m");
 	printf("DO NOT REDISTRIBUTE!\n\n");
 	svcSleepThread(500000000);
 	
@@ -118,6 +114,10 @@ int main() {
 				svcSleepThread(8000000000);
 			printf("\x1b[31mERROR: \x1b[0mDowngrading failed. Rebooting...\n");
 			svcSleepThread(800000000);
+			
+			aptOpenSession();
+			APT_HardwareResetAsync();
+			aptCloseSession();
 		}
 		
 		if (kDown & KEY_START) break;
