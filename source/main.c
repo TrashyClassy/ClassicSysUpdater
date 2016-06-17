@@ -29,7 +29,7 @@ int main() {
 	
 	clearScreen();
 	printf("SansSysUpdater - UNSTABLE BUILD!\n");
-	printf("\x1b[31mIMPORTANT: THIS IS AN UNSTABLE BUILD, MEANING THAT THIS HAS THE POTENTIAL TO BRICK YOUR DEVICE! BE AWARE.\x1b[0m");
+	printf("\x1b[31mIMPORTANT: THIS IS AN UNSTABLE BUILD! BE AWARE.\x1b[0m\n");
 	printf("DO NOT REDISTRIBUTE!\n\n");
 	svcSleepThread(500000000);
 	
