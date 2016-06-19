@@ -28,9 +28,7 @@ int main() {
 	svcSleepThread(2000000000);
 	
 	clearScreen();
-	printf("SansSysUpdater - UNSTABLE BUILD!\n");
-	printf("\x1b[31mIMPORTANT: THIS IS AN UNSTABLE BUILD! BE AWARE.\x1b[0m\n");
-	printf("DO NOT REDISTRIBUTE!\n\n");
+	printf("ClassicSysUpdater. Stable build\n")
 	svcSleepThread(500000000);
 	
 	printf("Press A to downgrade.\n");
