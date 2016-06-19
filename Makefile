@@ -32,9 +32,9 @@ SOURCES		:=	source
 DATA		:=	data
 INCLUDES	:=	include
 
-APP_TITLE := SansSysUpdater
-APP_DESCRIPTION := Experimental 11.x downgrader.
-APP_AUTHOR := Sans-Serif
+APP_TITLE := ClassicSysUpdater
+APP_DESCRIPTION := Functional 11.0 downgrader!
+APP_AUTHOR := TrashyClassy
 
 #---------------------------------------------------------------------------------
 # options for code generation
